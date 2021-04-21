@@ -7,11 +7,7 @@ const util = require('util');
 // TODO: Create a function to write README file
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
-
 // TODO: Create an array of questions for user input
-
-
 const questions = () => {
     return inquirer.prompt([{
         type: 'input',
@@ -21,10 +17,6 @@ const questions = () => {
         type: 'input',
         name: 'description',
         message: 'Enter the description for your project',
-    }, {
-        type: 'input',
-        name: 'tableOfContents',
-        message: 'Enter a table of contents here for your README',
     }, {
         type: 'input',
         name: 'installation',
@@ -53,27 +45,6 @@ const questions = () => {
     }])
 };
 
-// README format for answers to fill
-const generateREADME = (answers) => {
-    `# Project Title
-    \n${answers.title}\n
-    ## Description
-    \n${answers.description}\n
-    ## Table of Contents
-    \n${answers.tableOfContents}\n
-    ## Installation 
-    \n${answers.installation}\n
-    ## Usage
-    \n${answers.usage}\n
-    ## License
-    \n${answers.license}\n
-    ## Contributers
-    \n${answers.contributers}
-    ## Tests
-    \n${answers.tests}\n
-    ## Questions
-    \nFor any questions regarding this application, please email me at ${answers.questions}`;
-}
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
