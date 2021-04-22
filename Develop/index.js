@@ -45,10 +45,44 @@ const questions = () => {
     }])
 };
 
+function generateREADME(data) {
+    return `
+# ${data.title}
+
+## Table of Contents
+  [Description]
+  [Installation]
+  [Usage]
+  [License]
+  [Contributors]
+  [Tests]
+  [Questions]
+
+## Description
+\n${data.description}\n
+    
+## Installation
+\n${data.installation}\n
+    
+## Usage
+\n${data.usage}\n
+    
+## License
+\n${data.license}\n
+    
+## Contributers
+\n${data.contributers}\n
+    
+## Tests
+\n${data.tests}\n
+    
+## Questions
+\nFor any questions regarding this application, please email me at ${data.questions}`;
+}
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
+        .then((data) => writeFileAsync('README.md', generateREADME(data)))
         .then(() => console.log('Your README has successfully been generated'))
         .catch((err) => console.error(err));
 };

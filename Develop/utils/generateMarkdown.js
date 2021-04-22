@@ -16,7 +16,7 @@ function generateREADME(data) {
   return `# ${data.title}
   
   ## Project Title
-  \n${answers.title}\n
+  \n${data.title}\n
 
   ## Table of Contents
   [Description]
@@ -28,28 +28,33 @@ function generateREADME(data) {
   [Questions]
 
   ## Description
-  \n${answers.description}\n
+  \n${data.description}\n
     
   ## Installation
-  \n${answers.installation}\n
+  \n${data.installation}\n
     
   ## Usage
-  \n${answers.usage}\n
+  \n${data.usage}\n
     
   ## License
-  \n${answers.license}\n
+  \n${data.license}\n
     
   ## Contributers
-  \n${answers.contributers}\n
+  \n${data.contributers}\n
     
   ## Tests
-  \n${answers.tests}\n
+  \n${data.tests}\n
     
   ## Questions
-  \nFor any questions regarding this application, please email me at ${answers.questions}
-
-`;
+  \nFor any questions regarding this application, please email me at ${data.questions}`;
 }
+// TODO: Create a function to initialize app
+const init = () => {
+  questions()
+    .then((data) => writeFileAsync('README.md', generateREADME(data)))
+    .then(() => console.log('Your README has successfully been generated'))
+    .catch((err) => console.error(err));
+};
 
 
 module.exports = generateREADME;
