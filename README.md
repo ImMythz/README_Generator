@@ -8,16 +8,16 @@ Quickly and easily create a README file by using a the CLI to generate one. This
 1. Open GitBash
 2. You will need to clone to repository to your machine
 
-  $ git https://github.com/ImMythz/README_Generator.git
+  `$ git https://github.com/ImMythz/README_Generator.git`
   
 3. Then open the repository in your code editor of choice (ex: VSCode)
 4. Then open the <i>Terminal</i> and run the following command to install all dependencies
 
-  $ npm i
+  `$ npm i`
   
 5. Then run this command to start the application
 
-  $ node index.js
+  `$ node index.js`
   
 6. After following the prompts the CLI show output this indicating your README.md file has been created
 
@@ -29,7 +29,7 @@ This application allows you as a developer to create high quality README.md file
 
 Click the image below to play a video demo of this application:
 
-[![Video Demo]src='assets\images\Demo.mp4' alt='demo video']
+[![Video Demo]placeholder]
 
 ## License
 MIT License
