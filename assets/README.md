@@ -1,5 +1,5 @@
 
-# Project[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+# Title[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 ## Table of Contents
   [Description](#description)
@@ -19,17 +19,17 @@
 
 ## Description
 
-This is a description
+Description
 
 
 ## Installation
 
-This is how you install this application
+Installation instructions
 
 
 ## Usage
 
-This is the use of this application
+This is how you use the application
 
 
 ## License
@@ -62,16 +62,16 @@ https://opensource.org/licenses/MIT
 
 ## Contributers
 
-gitUser1, gitUser2
+user1 and user2
 
 
 ## Tests
 
-This is a description
+This is how you test the application
 
 
 ## Questions
 
 For any questions regarding this application, please email me at test@gmail.com
 
-or visit my GitHub at gitUser123
+or visit my GitHub at test123

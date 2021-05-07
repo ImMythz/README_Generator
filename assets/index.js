@@ -52,56 +52,8 @@ const questions = () => {
         name: 'questions',
         message: 'enter the email address you would like developers to reach you at',
     }])
-    // .then currently breaks README
-    // .then((data) => {
-    //     if (data.license === 'The MIT License') {
-    //         renderLicenseBadge();
-    //         renderLicenseLink();
-    //         renderLicenseSection();
-    //         generateREADME();
-    //         init();
-
-    //     } else if (data.license === 'No License') {
-    //         const noLicense = 'No License';
-    //         return noLicense;
-    //     }
-    // });
 };
 
-// function generateREADME(data) {
-//     return `
-// # ${data.title}
-
-// ## Table of Contents
-//   [Description]
-//   [Installation]
-//   [Usage]
-//   [License]
-//   [Contributors]
-//   [Tests]
-//   [Questions]
-
-// ## Description
-// \n${data.description}\n
-
-// ## Installation
-// \n${data.installation}\n
-
-// ## Usage
-// \n${data.usage}\n
-
-// ## License
-// \n${data.license}\n
-
-// ## Contributers
-// \n${data.contributers}\n
-
-// ## Tests
-// \n${data.tests}\n
-
-// ## Questions
-// \nFor any questions regarding this application, please email me at ${data.questions}`;
-// }
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
