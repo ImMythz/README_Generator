@@ -29,7 +29,7 @@ This application allows you as a developer to create high quality README.md file
 
 Click the image below to play a video demo of this application:
 
-[![Video Demo]placeholder]
+https://user-images.githubusercontent.com/72038731/117478108-5c783f80-af24-11eb-84ad-06761214e4c6.mp4
 
 ## License
 MIT License
